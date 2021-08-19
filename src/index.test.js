@@ -17,7 +17,7 @@ describe('index.html', () => {
     const {JSDOM} = jsdom;
     const dom =  new JSDOM(index);
     const h1 = dom.window.document.getElementsByName("h1")[0];
-    expect(h1.innerHTML).to.equal("Hello Martin Joseph Lubowa!");
+    expect(h1.innerHTML).to.equal("Users");
     dom.window.close();
 
   })
